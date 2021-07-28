@@ -1,0 +1,45 @@
+/* Mapa del Sitio */
+.mapaSitio {
+    >div {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        img {
+            border-radius: 3rem;
+        }
+        >div:nth-child(1) {
+            order:1;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            margin-top: 0px;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+/* 768px para arriba */
+@media only screen and (min-width: 768px) {
+    .mapaSitio {
+        >div {
+            flex-direction: row;
+            >div:nth-child(1) {
+                order:0;
+            }
+            h2 {
+                text-align: left;
+                margin-bottom: 2rem;
+            }
+            p {
+                text-align: left;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

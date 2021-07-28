@@ -1,0 +1,32 @@
+/* Contacto */
+.formulario {
+    margin-top: 2rem;
+    .contenedorTituloForm {
+        background-color: $colorPrincipal;
+        padding: 1rem 0;
+        margin-bottom: 5rem;
+        border-radius: .5rem;
+    }
+    p {
+        text-align: center;
+        color: #ffffff;
+    }
+}
+
+.map {
+    iframe {
+        width: 100%;
+        height: 100vh;
+        margin-top: 3rem;
+    }
+}
+
+/* 768px para arriba */
+@media only screen and (min-width: 768px) {
+    .map {
+        iframe {
+            margin-top: 2rem;
+            width: 100%;
+        }
+    }
+}

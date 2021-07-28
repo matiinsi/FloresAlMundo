@@ -1,0 +1,49 @@
+.llamadoAccion {
+    background-image: url("../images/bg-florista.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+    height: 30rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin:10rem 0;
+    >div {
+        margin-left: 0;
+        .contendorAccion {
+            text-align: center;
+            margin-right: 0px;
+            h2 {
+                font-family: 'Poppins', sans-serif;
+                font-weight: normal;
+                color: #ffffff;
+                text-align: center;
+                margin: 0;
+            }
+            span {
+                font-family: 'DM Sans', sans-serif;
+                color: $colorPrincipal;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/* 1024px para arriba */
+@media only screen and (min-width: 1024px) {
+    .llamadoAccion {
+        background-position: center right;
+        justify-content: flex-start;
+        align-items: center;
+        margin:10rem 0;
+        >div {
+            margin-left: 20rem;
+            .contendorAccion {
+                h2 {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

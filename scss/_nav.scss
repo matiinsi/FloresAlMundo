@@ -1,0 +1,21 @@
+/* Nav Mobile First */
+nav {
+    background-color: rgba(255,255,255, .8);
+
+    .logo {
+        text-align: center;
+
+        img {
+            width: 150px;
+        }
+    }
+}
+
+.navBgPages {
+    background-image: url("../images/bg-head.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0px 6px 11px 1px rgba(0,0,0,0.3);
+}

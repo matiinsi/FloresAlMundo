@@ -1,0 +1,27 @@
+/* Items */
+#items {
+    margin-top: 2rem;
+    .items {
+        >div {
+            text-align: center;
+            margin-top: 3rem;
+            .itemElegirnos {
+                svg {
+                    color: $colorPrincipal;
+                    width: 100px;
+                }
+                h3 {
+                    font-size: 3rem;
+                }
+            }
+            
+        }
+    }
+}
+
+/* 768px para arriba */
+@media only screen and (min-width: 768px) {
+    .items {
+        flex-direction: row;
+    }
+}

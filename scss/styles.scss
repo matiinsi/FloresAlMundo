@@ -1,0 +1,26 @@
+/* Opciones del theme */
+@import "theme";
+
+/* Estructura del sitio */
+@import "nav";
+@import "header";
+@import "main";
+@import "footer";
+
+/* Elementos */
+@import "selectores";
+@import "menubar";
+@import "beneficios";
+@import "llamadoaccion";
+@import "planes";
+@import "team";
+@import "animaciones";
+@import "items";
+@import "botones";
+
+/* Páginas */
+@import "contacto";
+@import "preguntas";
+@import "quienesSomos";
+@import "404";
+@import "mapaSitio";

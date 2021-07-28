@@ -1,0 +1,38 @@
+/* Botones */
+.boton {
+    text-decoration: none;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: inline-block;
+    border: none;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.boton:hover {
+    transform:translateY(-5px);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btnPrimario {
+    @extend .boton;
+    background-color: $colorSecundario;
+    color: #ffffff;
+}
+
+.btnPrimario:hover {
+    background-color: $colorSecundarioHover;
+}
+
+.btnSecundario {
+    @extend .boton;
+    background-color: $colorTerciario;
+    color: #000000;
+}
+
+.btnSecundario:hover {
+    background-color: $colorTerciarioHover;
+    color: #000000;
+}

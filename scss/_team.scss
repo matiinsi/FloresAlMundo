@@ -1,0 +1,50 @@
+/* teams */
+.teams {
+    .team {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 2rem 0;
+        img {
+            border-radius: 3rem;
+            width: 30rem;
+        }
+        .bodyTeam {
+            text-align: center;
+            h4 {
+                font-size: 2.4rem;
+            }
+            .redesSociales {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    li {
+                        margin-right: 0.5rem;
+                        a {
+                            display: inline-block;
+                            background-color: $colorPrincipal;
+                            border-radius: 0.5rem;
+                            color: #ffffff;
+                            padding: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 768px para arriba */
+@media only screen and (min-width: 768px) {
+    .teams {
+        .team {
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            .bodyTeam  {
+                text-align: center;
+            }
+        }
+    }
+}

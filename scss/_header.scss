@@ -1,0 +1,126 @@
+/* Header */
+header {
+    background-image: url("../images/bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    .hero {
+        align-items: center;
+
+        .contenedorTextoHero {
+            background-color: rgba(255,255,255, .6);
+            border-radius: 10px;
+            text-align: center;
+            padding: 5rem 1rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            h1 {
+                font-size: 3.2rem;
+            }
+
+            p {
+                font-size: 1.8rem;
+            }
+        }
+
+        .contenedorImgHero {
+            img {
+                max-width: 30rem;
+                transform: perspective(1000px) rotateY(-45deg);
+                transition: all .4s ease-in-out;
+                &:hover {
+                    transform: perspective(1000px) rotateY(0deg);
+                }
+            }
+        }
+    }
+
+    .olas {
+        grid-area: olas;
+        width: 100%;
+        position: absolute;
+        bottom: -7px;
+    }
+}
+
+/* 320px */
+@media only screen and (min-width: 320px) {
+    header {
+        .hero {
+            .contenedorTextoHero {
+                h1 {
+                    font-size: 3.6rem;
+                }
+
+                p {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+/* 480px */
+@media only screen and (min-width: 480px) { 
+    header {
+        padding-top: 19rem;
+        .contenedorImgHero {
+            img {
+                max-width: 35rem;
+            }
+        }
+        
+    }
+}
+
+/* 768px */
+@media only screen and (min-width: 768px) {
+    header {
+        height: 80vh;
+        .hero {
+            grid-template-areas: 
+            "contenedorTextoHero contenedorImgHero";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: none;
+            align-items: flex-start;
+            .contenedorImgHero {
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* 1024px */
+@media only screen and (min-width: 1024px) {
+    header {
+        height: 90vh;
+        .hero {
+            grid-template-areas: 
+            "contenedorTextoHero contenedorImgHero";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: none;
+            align-items: flex-start;
+            .contenedorTextoHero {
+                padding: 6rem 4rem;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                h1 {
+                    font-size: 4.2rem;
+                }
+                p {
+                    font-size: 2.4rem;
+                }
+            }
+            .contenedorImgHero {
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

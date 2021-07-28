@@ -1,0 +1,47 @@
+.menuBar {
+    text-align: center;
+    margin-bottom: 1rem;
+    ul {
+        li {
+            padding: 0.5rem;
+            transition: all .4s ease;
+            a {
+                color: #000000;
+                text-decoration: none;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 1.2rem;
+            }
+        &:hover {
+            background-color: $colorPrincipal;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            a {
+                color: #ffffff;
+            }
+        }
+        }
+        li.active {
+            background-color: $colorPrincipal;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            a {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+/* 1024px para arriba */
+@media only screen and (min-width: 1024px) {
+    .menuBar {
+        justify-content: flex-end;
+        height: 100%;
+        margin-bottom: 0;
+        ul {
+            li {
+                margin-right: 2rem;
+            }
+        }
+    }
+}

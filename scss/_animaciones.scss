@@ -1,0 +1,57 @@
+/* Animaciones para mostrar for */
+/* 1, 2 y 3 */
+@for $i from 1 to 4 {
+    .flor#{$i} {
+        position: absolute;
+        left: (60px * $i) + 200px;
+        bottom: 70px * $i;
+        animation-name: movimientoRosa;
+        z-index: 100;
+        animation-duration: (7s * $i);
+        animation-iteration-count: infinite;
+        img {
+            width: (20px * $i) + 100px;
+            height: (20px * $i) + 100px;
+        }
+    }
+}
+
+/* Movimiento Rosa */
+@keyframes movimientoRosa {
+    0% {
+        opacity: 0;
+        bottom: -200px;
+    }
+
+    10% {
+        opacity: 0.20;
+        bottom: 0px;
+    }
+
+    20% {
+        opacity: 0.50;
+        bottom: 100px;
+        left: 50px;
+    }
+
+    50% {
+        opacity: 1;
+        bottom: 300px;
+        left: 500px;
+    }
+
+    60% {
+        opacity: 0.80;
+        bottom: 600px;
+    }
+
+    80% {
+        opacity: 0.50;
+        bottom: 900px;
+    }
+
+    100% {
+        opacity: 0;
+        bottom: 1000px;
+    }
+}
